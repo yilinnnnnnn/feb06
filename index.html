@@ -3,20 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Simple Website</title>
+    <title>Simple Website with 3D Model</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header, footer { background-color: #f3f3f3; text-align: center; padding: 1em; }
-        nav { background: #333; padding: 0; }
-        nav a { color: white; padding: 14px 20px; display: inline-block; text-decoration: none; }
-        nav a:hover { background-color: #ddd; color: black; }
-        .container { padding: 20px; }
-        
-    
-        
-    </style>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
 </head>
 <body>
     <header>
@@ -31,7 +20,9 @@
     <div class="container">
         <main>
             <h2>Main Content</h2>
-            <p>This is the main content section of the website. Here you can add your own text, images, and other elements to describe your website, services, or products. Feel free to customize this section according to your needs.</p>
+            <p>This is the main content section of the website. Below is an interactive 3D model displayed using Google's Model Viewer.</p>
+            <!-- Model Viewer -->
+            <model-viewer src="path/to/your/model.glb" alt="A 3D model" auto-rotate camera-controls ar shadow-intensity="1" style="width: 100%; height: 400px;"></model-viewer>
         </main>
     </div>
     <footer>
@@ -39,4 +30,3 @@
     </footer>
 </body>
 </html>
-
